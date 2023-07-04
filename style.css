@@ -1,0 +1,122 @@
+body {
+  font-family: Open Sans, sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100vw;
+  margin: 0 !important;
+}
+div {
+  display: flex;
+}
+/*#region menu*/
+
+/*#region menu screen*/
+.menu {
+  max-height: 40px;
+  flex: 1;
+  background: #fff;
+  flex-shrink: 0;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.menu-slide {
+  display: none;
+  position: absolute;
+  padding: 18px 20px 30px 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  flex-shrink: 0;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.menu-slide-top {
+  justify-content: flex-end;
+  width: 100%;
+}
+.menu-logo {
+  color: #000;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.88px;
+  text-transform: uppercase;
+}
+.menu-buttons {
+}
+.menu-buttons-button {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+}
+.menu-buttons-button__margin-left {
+  margin-left: 24px;
+}
+.menu-buttons-button__hidden {
+  display: none;
+}
+.menu-layout {
+  padding: 12px 26px 16px 26px;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  max-height: 40px;
+}
+
+.menu-buttons-button-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/*#endregion*/
+
+/*#endregion*/
+
+.layout {
+  max-width: 1440px;
+  flex: 1;
+}
+.content {
+}
+.content-layout {
+  flex-direction: row;
+}
+.content-main-image {
+  max-width: 686px;
+  max-height: 878px;
+  flex-shrink: 0;
+}
+/*#region media*/
+@media (max-device-width: 800px) and (max-width: 800px) {
+  .menu-buttons-button__hidden {
+    display: flex;
+  }
+  .menu-layout {
+    padding: 22px 20px 0px 20px;
+    max-height: none;
+  }
+  .menu {
+    box-shadow: none;
+    max-height: none;
+  }
+  .content-layout {
+    flex-direction: column;
+  }
+  .content-main-image {
+    max-width: none;
+    max-height: none;
+    flex-shrink: 0;
+    width: 100%;
+  }
+}
+/*#endregion*/
+.footer {
+}
