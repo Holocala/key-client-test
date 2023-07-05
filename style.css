@@ -9,6 +9,10 @@ body {
 div {
   display: flex;
 }
+.layout {
+  max-width: 1440px;
+  flex: 1;
+}
 /*#region menu*/
 
 /*#region menu screen*/
@@ -80,47 +84,69 @@ div {
 
 /*#endregion*/
 
-.layout {
-  max-width: 1440px;
-  flex: 1;
-}
+/*#region content*/
 .content {
 }
 .content-main-image {
-  max-width: 50vw;
-  flex-shrink: 0;
+  max-width: 686px;
 }
 .content-layout {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+  flex-direction: row;
     flex: 1;
-    flex-direction: row;
 }
-.content-right-content {
-    flex: 1;
-    flex-direction: column;
-    justify-content: flex-end;
-    float: right;
-    margin: 5px;
+.content-right {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  float: right;
+  margin: 5px;
 }
-.content-right-content-nametag {
-    justify-content: flex-start;
-    text-align: left;
+.content-right-nameTag {
+  justify-content: flex-start;
+  text-align: left;
 }
 
-.content-right-content-articul {
-    flex: 1;
-    font-size: x-small;
-    text-align: left;
+.content-right-articul {
+  flex: 1;
+  font-size: x-small;
+  text-align: left;
 }
+.content-left {
+  flex: 1;
+  width: auto;
+}
+.content-left-image {
+  margin-left: -94px;
+  width: 686px;
+  height: 878px;
+}
+.content-left-image-img {
+  width: 100%;
+  height: 100%;
+}
+.content-left-imgMenu {
+  margin-top: 24px;
+  margin-left: 24px;
+  flex-direction: column;
+  z-index: 10;
+}
+.content-left-imgMenu-item {
+  cursor: pointer;
+  width: 70px;
+  height: 91px;
+}
+.content-left-imgMenu-item-img {
+  width: 100%;
+  height: 100%;
+}
+
+.content-left-imgMenu-item__marginTop {
+  margin-top: 7px;
+}
+/*endregion*/
 
 .footer {
 }
-
-
-
 
 /*#region media*/
 @media (max-device-width: 800px) and (max-width: 800px) {
@@ -138,10 +164,11 @@ div {
   .content-layout {
     flex-direction: column;
   }
-  .content-main-image {
-    max-width: none;
-    max-height: none;
-    flex-shrink: 0;
+  .content-left-image {
+    width: 100%;
+    height: auto;
+  }
+  .content-left {
     width: 100%;
   }
 }
