@@ -1,15 +1,27 @@
 const imageUri = "/src/images/";
 
 window.onload = () => {
-  const menuButton = document.getElementById("menuButton");
-  const slide = document.getElementById("menuSlide");
-  const closeButton = document.getElementById("closeButton");
-  const image1 = document.getElementById("image1");
-  const image2 = document.getElementById("image2");
-  const image3 = document.getElementById("image3");
-  const image4 = document.getElementById("image4");
-  const image5 = document.getElementById("image5");
-  const leftImage = document.getElementById("leftImage");
+  const menuButton = document.getElementById("menuButton"),
+      slide = document.getElementById("menuSlide"),
+      closeButton = document.getElementById("closeButton"),
+      image1 = document.getElementById("image1"),
+      image2 = document.getElementById("image2"),
+      image3 = document.getElementById("image3"),
+      image4 = document.getElementById("image4"),
+      image5 = document.getElementById("image5"),
+      leftImage = document.getElementById("leftImage"),
+      plus = document.getElementById("plus"),
+      minus = document.getElementById("minus"),
+      num = document.getElementById("num"),
+      button = document.getElementById("button"),
+      buttonH= document.getElementById("button-heart");
+
+  button.onclick = ()=> {
+    button.style.display = "flex";
+  }
+  buttonH.onclick = ()=> {
+    buttonH.style.display = "flex"
+  }
   menuButton.onclick = () => {
     slide.style.display = "flex";
   };
@@ -22,4 +34,25 @@ window.onload = () => {
   image2.onclick = () => {
     leftImage.src = `${imageUri}2.png`;
   };
+  image3.onclick = () => {
+    leftImage.src = `${imageUri}3.png`;
+  };
+  image4.onclick = () => {
+    leftImage.src = `${imageUri}4.png`;
+  };
+  image5.onclick = () => {
+    leftImage.src = `${imageUri}port.png`;
+  };
+
+  let counter = 0;
+  plus.addEventListener("click", () => {
+    counter++;
+    num.innerText = counter.toString();
+  });
+  minus.addEventListener("click", () => {
+    if (counter > 0) {
+      counter--;
+      num.innerText = counter.toString();
+    }
+  });
 };
