@@ -2,26 +2,27 @@ const imageUri = "/src/images/";
 
 window.onload = () => {
   const menuButton = document.getElementById("menuButton"),
-      slide = document.getElementById("menuSlide"),
-      closeButton = document.getElementById("closeButton"),
-      image1 = document.getElementById("image1"),
-      image2 = document.getElementById("image2"),
-      image3 = document.getElementById("image3"),
-      image4 = document.getElementById("image4"),
-      image5 = document.getElementById("image5"),
-      leftImage = document.getElementById("leftImage"),
-      plus = document.getElementById("plus"),
-      minus = document.getElementById("minus"),
-      num = document.getElementById("num"),
-      btn= document.getElementById("myBtn");
+    slide = document.getElementById("menuSlide"),
+    closeButton = document.getElementById("closeButton"),
+    image1 = document.getElementById("image1"),
+    image2 = document.getElementById("image2"),
+    image3 = document.getElementById("image3"),
+    image4 = document.getElementById("image4"),
+    image5 = document.getElementById("image5"),
+    leftImage = document.getElementById("leftImage"),
+    plus = document.getElementById("plus"),
+    minus = document.getElementById("minus"),
+    num = document.getElementById("num"),
+    btn = document.getElementById("myBtn"),
+    closeModalBtn = document.getElementById("closeModalBtn"),
+    modal = document.getElementById("myModal");
 
   btn.onclick = function () {
-    modal.style.display = "block";
-  }
-  span.onclick = function (){
-    modal.style.displayg
-  }
-
+    modal.style.display = "flex";
+  };
+  closeModalBtn.onclick = function () {
+    modal.style.display= 'none';
+  };
 
   menuButton.onclick = () => {
     slide.style.display = "flex";
