@@ -13,15 +13,16 @@ window.onload = () => {
       plus = document.getElementById("plus"),
       minus = document.getElementById("minus"),
       num = document.getElementById("num"),
-      button = document.getElementById("button"),
-      buttonH= document.getElementById("button-heart");
+      btn= document.getElementById("myBtn");
 
-  button.onclick = ()=> {
-    button.style.display = "flex";
+  btn.onclick = function () {
+    modal.style.display = "block";
   }
-  buttonH.onclick = ()=> {
-    buttonH.style.display = "flex"
+  span.onclick = function (){
+    modal.style.displayg
   }
+
+
   menuButton.onclick = () => {
     slide.style.display = "flex";
   };
