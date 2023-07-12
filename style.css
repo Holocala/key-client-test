@@ -3,7 +3,7 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
-  width: min(100%, 1920px);
+  width: 100vw;
   margin: 0 !important;
 }
 div {
@@ -132,12 +132,15 @@ a {
 .content-layout {
   flex-direction: row;
   flex: 1;
+  width: 100%;
 }
 .content-right {
   flex-direction: column;
   float: left;
+  flex: 1;
   margin-top: 44px;
   margin-left: 36px;
+  margin-right: 36px;
 }
 .content-right-nameTag {
   color: #333;
@@ -249,7 +252,6 @@ a {
 }
 /*#region content-right-counter*/
 .content-right-counter {
-  margin-top: 40px;
   height: 44px;
   width: 145px;
   align-items: center;
@@ -280,19 +282,20 @@ a {
   letter-spacing: 0.56px;
 }
 .content-right-counter-atc {
+  flex-wrap: wrap;
+  margin-top: 40px;
+  row-gap: 15px;
 }
 .content-right-atc-button {
   margin-top: 40px;
 }
 .content-right-button {
-  margin-top: 40px;
   cursor: pointer;
 }
-.content-right-button__margin-left {
-  margin-left: 12px;
+.content-right-atc-button-container__margin {
+  margin-right: 12px;
 }
 .content-right-button-heart {
-  margin-top: 40px;
   cursor: pointer;
 }
 .content-right-button-heart__margin-left {
@@ -460,6 +463,7 @@ hr.solid {
   flex: 1;
   max-width: 686px;
   margin: 5px;
+  width: 50%;
 }
 .content-left-image {
   margin-left: -94px;
@@ -491,15 +495,19 @@ hr.solid {
 /*endregion*/
 
 .footer {
-  margin-left: 5px;
-  margin-top: 80px;
-  display: flex;
+  padding-left: 143px;
+  padding-right: 143px;
+  padding-top: 80px;
   width: auto;
+  justify-content: space-between;
   gap: 16px;
+  flex: 1;
 }
 .footer-content {
   margin-bottom: 58px;
   flex-direction: row;
+  flex: 1;
+  gap: 16px;
 }
 /*#region footer content left*/
 .footer-content-left {
@@ -508,6 +516,7 @@ hr.solid {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+  flex: 1;
   line-height: 24px;
   letter-spacing: 0.64px;
   text-transform: uppercase;
@@ -524,7 +533,7 @@ hr.solid {
   cursor: pointer;
 }
 .footer-content-left-brands {
-  margin-top:8px;
+  margin-top: 8px;
   text-transform: capitalize;
   color: #333;
   font-size: 14px;
@@ -549,12 +558,11 @@ hr.solid {
 
 /*#region footer content center*/
 .footer-content-center {
-  margin-left: 225px;
-  margin-right: 299px;
   flex-direction: column;
   color: #333;
   font-size: 16px;
   font-style: normal;
+  flex: 1;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.64px;
@@ -613,7 +621,8 @@ hr.solid {
   align-items: center;
 }
 .footer-content-input-email2 {
-  width: 452px;
+  max-width: 452px;
+  width: 100%;
   height: 44px;
   color: #828282;
   font-size: 14px;
@@ -647,6 +656,10 @@ hr.solid {
     box-shadow: none;
     max-height: none;
   }
+  .content-right {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
   .content-layout {
     flex-direction: column;
   }
@@ -655,10 +668,27 @@ hr.solid {
     height: auto;
   }
   .content-left {
+    width: Calc(100% - 10px);
+    max-width: none;
+  }
+  .footer {
+    flex-direction: column;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .footer-content-input-email2 {
     width: 100%;
+    max-width: none;
+  }
+  .content-right-counter-atc {
+    flex-direction: column;
+  }
+  .content-right-atc-button-container__margin {
+    margin-right: 0;
+  }
+  .content-right-atc-button-container {
+    margin-top: 15px;
   }
 }
-@media screen and (max-width: 800px) {
-.footer {
-  flex-direction: column;}}
+
 /*#endregion*/
