@@ -17,6 +17,7 @@ div {
 
 /*#region menu screen*/
 .menu {
+  width: auto;
   max-height: 40px;
   flex: 1;
   background: #fff;
@@ -51,6 +52,7 @@ div {
   text-transform: uppercase;
 }
 .menu-buttons {
+  justify-content: flex-end;
 }
 .menu-buttons-button {
   width: 24px;
@@ -80,7 +82,7 @@ div {
   flex-shrink: 0;
 }
 .menu-content {
-  width: 375px;
+  width: auto;
   height: 277px;
   padding: 80px 20px 30px 30px;
   flex-direction: column;
@@ -94,11 +96,11 @@ div {
   background: #fff;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
 }
-.menu-menu-bar{
+.menu-menu-bar {
   color: #333;
   font-size: 12px;
   font-style: normal;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 0.48px;
@@ -110,10 +112,10 @@ ul {
   padding-inline-start: 0;
   color: black;
 }
-li{
+li {
   margin-bottom: 30px;
 }
-a{
+a {
   text-decoration: none;
 }
 
@@ -319,8 +321,8 @@ a{
   width: 100%;
   height: 100%;
   overflow: auto;
-  border: 1px solid #E6E9F0;
-  box-shadow: 5px 5px 50px 0px rgba(121, 121, 121, 0.10);
+  border: 1px solid #e6e9f0;
+  box-shadow: 5px 5px 50px 0px rgba(121, 121, 121, 0.1);
 }
 .content-right-modal-content {
   background-color: #fefefe;
@@ -329,7 +331,6 @@ a{
   border: 1px solid #888;
   height: 454px;
   flex-direction: column;
-
 }
 .content-right-modal-close {
   color: #aaa;
@@ -344,7 +345,7 @@ a{
   text-decoration: none;
   cursor: pointer;
 }
-.content-right-modal-input{
+.content-right-modal-input {
   display: flex;
   width: 276px;
   height: 15px;
@@ -357,26 +358,15 @@ a{
   font-weight: 400;
   line-height: 80%;
 }
-.content-right-modal-phone{
+.content-right-modal-phone {
   margin-top: 40px;
   border: none;
-  background: #FDFCFC;
+  background: #fdfcfc;
   width: 330px;
   height: 63px;
   flex-shrink: 0;
 }
-.content-modal-phone-input{
-  width: 330px;
-  height: 63px;
-  flex-shrink: 0;
-  color: #303030;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  text-indent: 20px;
-}
-.content-modal-name-input{
+.content-modal-phone-input {
   width: 330px;
   height: 63px;
   flex-shrink: 0;
@@ -387,11 +377,22 @@ a{
   line-height: normal;
   text-indent: 20px;
 }
-.content-right-modal-name{
+.content-modal-name-input {
+  width: 330px;
+  height: 63px;
+  flex-shrink: 0;
+  color: #303030;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-indent: 20px;
+}
+.content-right-modal-name {
   margin-top: 16px;
   padding-bottom: 11px;
 }
-.content-right-modal-text{
+.content-right-modal-text {
   margin-top: 20px;
   display: flex;
   width: 330px;
@@ -405,7 +406,7 @@ a{
   line-height: normal;
   letter-spacing: -0.1px;
 }
-.content-right-modal-terms{
+.content-right-modal-terms {
   color: #303030;
   font-size: 10px;
   font-style: normal;
@@ -414,8 +415,8 @@ a{
   letter-spacing: -0.1px;
   text-decoration-line: underline;
 }
-.content-right-modal-send{
- margin-top: 33px;
+.content-right-modal-send {
+  margin-top: 33px;
 }
 hr.solid {
   margin-top: 29px;
@@ -490,7 +491,148 @@ hr.solid {
 /*endregion*/
 
 .footer {
+  margin-left: 5px;
+  margin-top: 80px;
+  display: flex;
+  width: auto;
+  gap: 16px;
 }
+.footer-content {
+  margin-bottom: 58px;
+  flex-direction: row;
+}
+/*#region footer content left*/
+.footer-content-left {
+  flex-direction: column;
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+}
+.footer-content-left-catalogue {
+  text-transform: capitalize;
+  margin-top: 16px;
+  color: #333;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.56px;
+  cursor: pointer;
+}
+.footer-content-left-brands {
+  margin-top:8px;
+  text-transform: capitalize;
+  color: #333;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.56px;
+  cursor: pointer;
+}
+.footer-content-left-discounts {
+  text-transform: capitalize;
+  margin-top: 8px;
+  color: #333;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.56px;
+  cursor: pointer;
+}
+/*#endregion*/
+
+/*#region footer content center*/
+.footer-content-center {
+  margin-left: 225px;
+  margin-right: 299px;
+  flex-direction: column;
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+}
+.footer-content-center-company {
+  margin-top: 16px;
+  text-transform: none;
+  color: #333;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.56px;
+  cursor: pointer;
+}
+.footer-content-center-news {
+  margin-top: 8px;
+  text-transform: capitalize;
+  color: #333;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.56px;
+  cursor: pointer;
+}
+.footer-content-center-team {
+  text-transform: capitalize;
+  margin-top: 8px;
+  color: #333;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.56px;
+  cursor: pointer;
+}
+/*#endregion*/
+
+/*#region footer content right*/
+.footer-content-right {
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+}
+.footer-content-input-email {
+  padding: 16px 0 24px 0;
+  justify-content: left;
+  align-items: center;
+}
+.footer-content-input-email2 {
+  width: 452px;
+  height: 44px;
+  color: #828282;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.56px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #c4c4c4;
+  text-indent: 8px;
+}
+.footer-content-right-subscribe {
+  justify-content: flex-end;
+  margin-top: 11px;
+  cursor: pointer;
+  margin-bottom: 34px;
+}
+/*#endregion*/
 
 /*#region media*/
 @media (max-device-width: 800px) and (max-width: 800px) {
@@ -516,4 +658,7 @@ hr.solid {
     width: 100%;
   }
 }
+@media screen and (max-width: 800px) {
+.footer {
+  flex-direction: column;}}
 /*#endregion*/
