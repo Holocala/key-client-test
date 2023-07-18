@@ -1,6 +1,4 @@
-TEST README
-
-- README
+-- README
 
 - Web site item page
 
