@@ -2,7 +2,7 @@ TEST README
 
 - README
 
-Web site item page
+- Web site item page
 
 1. Responsive design - it shrinks everything according to your window size.
 2. Sliding menu for mobile devices, and no sliding menu for pc. (it appears if your screen size is less than - 800px)
@@ -14,3 +14,6 @@ Web site item page
 
 1. IDE - WebStorm
 2. Language - html, js, css
+
+- How to launch
+1. Click on "index.html"
