@@ -12,5 +12,5 @@ Web site item page
 
 - Development
 
-IDE - WebStorm
-Language - html, js, css
+1. IDE - WebStorm
+2. Language - html, js, css
