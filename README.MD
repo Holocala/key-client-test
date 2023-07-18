@@ -12,6 +12,7 @@
 
 1. IDE - WebStorm
 2. Language - html, js, css
+3. Used Prettier
 
 - How to launch
 1. Click on "index.html"
