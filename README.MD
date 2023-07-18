@@ -1,6 +1,6 @@
 TEST README
 
-- README -
+- README
 
 Web site item page
 
@@ -10,7 +10,7 @@ Web site item page
 4. Simple item counter, works only with buttons though.
 5. "BuyNow" button with a pop-up window. (under item counter)
 
-Development
+- Development
 
 IDE - WebStorm
 Language - html, js, css
